@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import UsersListItem from './UsersListItem';
+import UsersListItem from '../../../users/components/UsersListItem';
 import faker from 'faker';
 
 describe('UsersListItem', () => {

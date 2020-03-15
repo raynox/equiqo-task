@@ -17,11 +17,12 @@ const SearchUsers = () => {
     <div className="w-50">
       <h2>Search users</h2>
       <Link to="/">
-        <button>{'< Back to the list'}</button>
+        <button data-test="backLinkButton">{'< Back to the list'}</button>
       </Link>
 
       <div className="mt1">
         <input
+          data-test="searchInput"
           onChange={(event) => searchUsers(event.target.value)}
           className="w-50"
           placeholder="Search by username..."

@@ -12,7 +12,7 @@ const UsersList = () => {
   const loadFunc = (page) => dispatch(usersActions.fetchUsers());
   
   return (
-    <div className="w-50">
+    <div className="w-50" data-test="usersList">
       <h2>Users list</h2>
 
       <Link to="/search">

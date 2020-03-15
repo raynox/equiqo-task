@@ -24,24 +24,18 @@ const UserDetails = () => {
 
       <div className="border pa1 mt1">
         <div className="flex items-center">
-          <img src={user.avatar_url} alt={user.login} className="avatar" />
-          <p className="inline-block ml1">{user.login}</p>
+          <img src={user.avatar_url} alt={user.login} className="avatar" data-test="avatar" />
+          <p className="inline-block ml1" data-test="login">{user.login}</p>
         </div>
         <div className="mt1">
           <p className="block">
-            <b>Name:</b>
-            {' '}
-            {user.name}
+            <b>Name:</b> <span data-test="name">{user.name}</span>
           </p>
           <p className="block">
-            <b>Company:</b>
-            {' '}
-            {user.company}
+            <b>Company:</b> <span data-test="company">{user.company}</span>
           </p>
           <p className="block">
-            <b>Location:</b>
-            {' '}
-            {user.location}
+            <b>Location:</b> <span data-test="location">{user.location}</span>
           </p>
         </div>
       </div>
